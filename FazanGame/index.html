@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fazan Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Kode+Mono:wght@400..700&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Fazan Game</h1>
+    
+        <div id="game-info">
+            <p>Player Lives: <span id="player-lives"></span></p>
+            <p>AI Lives: <span id="ai-lives"></span></p>
+        </div>
+    
+        <div class="ai-word">
+            <h2>AI Word is: <span id="ai-word"></span></h2>
+        </div>
+    
+        <!-- The input area for the player -->
+        <div>
+            <input type="text" id="player-input" placeholder="Enter your word" />
+            <div id="buttons">
+                <button id="submit" onclick="submitWord()">Submit</button>
+                <button id="give-up" onclick="giveUp()">Give Up</button> 
+                <button id="restart" style="display: none;" onclick="restartGame()">Restart Game</button> 
+            </div>
+        </div>
+    
+        <div id="feedback"></div>
+    
+        <div class="words">
+            <div>
+                <h3>My Used Words:</h3>
+                <ul id="player-words"></ul>
+            </div>
+            <div>
+                <h3>AI Used Words:</h2>
+                <ul id="used-words"></ul>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
